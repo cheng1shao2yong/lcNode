@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试模版</title>
+</head>
+<body>
+    <include file="head.html"/>
+    <p>${test}这里是变量调用22222222${abc.tf.a}</p>
+    <p>这里是if条件判断<if test="${test==abc.tf.a}">123</if></p>
+    <form action="http://localhost:3000/do" method="post">
+        <input type="text" name="userName" value="成绍勇"/><br/><br/>
+        <input type="password" name="password" value="0609030"/><br/><br/>
+        <input type="submit" value="提交"/>
+    </form>
+    <if test="${test<1}">
+        <p>大口大111口的贷款111</p>
+    <elseif test="${test<100}"/>
+        <p>大口大口的贷款222</p>
+    <else/>
+        <p>大口大口的贷款333</p>
+    </if>
+    <for from="${list}" value="v1" key="k1">
+        <if test="${v1%2==0}">
+            ${k1}=>${v1}<br/>
+        </if>
+    </for>
+    <include file="head.html"/>
+</body>
+</html>
