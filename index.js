@@ -2,8 +2,6 @@
 const http=require('http');
 const T=require('laocheng');
 //初始化模板引擎
-
-
 T.init(__dirname);
 let i=0;
 http.createServer(function(req,resp){

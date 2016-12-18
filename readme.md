@@ -1,4 +1,3 @@
-[TOC]
 #### 最新版本
 1.0.0
 
@@ -58,16 +57,16 @@ T.init(__dirname);
  });
 ```
 #### 8、标签
-- 参数打印
+参数打印
 ```javascript
 ${test}
 ${abc.tf.a}
 ```
-- 引入文件标签
+引入文件标签
 ```html
 <include file="head.html"/>
 ```
-- 条件判断标签if elseif else
+条件判断标签if elseif else
 ```html
 <if test="${test<1}">
 <p>大口大111口的贷款111</p>
@@ -77,7 +76,7 @@ ${abc.tf.a}
 <p>大口大口的贷款333</p>
 </if>
 ```
-- 迭代循环标签for
+迭代循环标签for
 ```html
 <for from="${list}" value="v1" key="k1">
      ${k1}=>${v1}<br/>
