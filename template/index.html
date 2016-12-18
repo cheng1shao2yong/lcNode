@@ -5,6 +5,14 @@
     <title>测试模版</title>
 </head>
 <body>
+    <node>
+        (function(){
+        var a=6;
+        var b=7;
+        resp.write(a+b+"<br/>");
+        resp.write(test+"<br/>");
+        })();
+    </node>
     <include file="head.html"/>
     <p>${test}这里是变量调用22222222${abc.tf.a}</p>
     <p>这里是if条件判断<if test="${test==abc.tf.a}">123</if></p>
@@ -25,6 +33,14 @@
             ${k1}=>${v1}<br/>
         </if>
     </for>
-    <include file="head.html"/>
+    <include file="foot.html"/>
+    <node>
+        (function(){
+        var a=1;
+        var b=2;
+        resp.write(a+b+"<br/>");
+        resp.write(test+"<br/>");
+        })();
+    </node>
 </body>
 </html>
