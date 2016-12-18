@@ -12,7 +12,7 @@ resp.write("    <p>"+test+"这里是变量调用22222222"+abc.tf.a+"</p>\n");
 resp.write("    <p>这里是if条件判断");if(test==abc.tf.a){resp.write("123");}resp.write("</p>\n");
 resp.write("    <form action=\"http://localhost:3000/do\" method=\"post\">\n");
 resp.write("        <input type=\"text\" name=\"userName\" value=\"成绍勇\"/><br/><br/>\n");
-resp.write("        <input type=\"password\" name=\"password\" value=\"0609030\"/><br/><br/>\n");
+resp.write("        <input type=\"password\" name=\"password\" value=\"1234567\"/><br/><br/>\n");
 resp.write("        <input type=\"submit\" value=\"提交\"/>\n");
 resp.write("    </form>\n");
 resp.write("    ");if(test<1){resp.write("\n");
