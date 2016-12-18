@@ -86,3 +86,14 @@ ${abc.tf.a}
      ${k1}=>${v1}<br/>
 </for>
 ```
+后端直接使用脚本标签node
+```html
+<node>
+	(function(){
+	var a=1;
+	var b=2;
+	resp.write(a+b+"<br/>");（可以使用resp.write方法打印结果）
+	resp.write(test+"<br/>");
+	})();
+</node>
+```
