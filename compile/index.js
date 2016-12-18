@@ -14,7 +14,7 @@ resp.write("<body>\n");
         resp.write(test+"<br/>");
         })();
 resp.write("    ");require("./head")(resp,val);resp.write("\n");
-resp.write("    <p>"+test+"这里是变量调用22222222"+abc.tf.a+"</p>\n");
+resp.write("    <p>"+test+"这里是变量调用123"+abc.tf.a+"</p>\n");
 resp.write("    <p>这里是if条件判断");if(test==abc.tf.a){resp.write("123");}resp.write("</p>\n");
 resp.write("    <form action=\"http://localhost:3000/do\" method=\"post\">\n");
 resp.write("        <input type=\"text\" name=\"userName\" value=\"成绍勇\"/><br/><br/>\n");
