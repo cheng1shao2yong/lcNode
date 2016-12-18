@@ -21,7 +21,7 @@ QQ群： 348455534
 
 #### 2、安装
 
-将核心模块复制到你node.js的node_modules/目录下。
+将核心模块“laocheng”复制到你node.js的node_modules/目录下。
 
 #### 3、设置模板引擎配置
 ```json
