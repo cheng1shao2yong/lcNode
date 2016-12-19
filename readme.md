@@ -97,3 +97,9 @@ ${abc.tf.a}
 	})();
 </node>
 ```
+权限标签permit，即为不同用户组显示不同的内容，在config.json中对用户组进行配置
+```html
+<permit id="1">
+   ${PERMIT}显示，该项目id为1<br/>
+</permit>
+```

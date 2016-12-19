@@ -1,3 +1,4 @@
+const Common=require("D:/nodejs/node_modules/laocheng/Common");
 function temp(resp,val){
 with(val){
 resp.write("<!DOCTYPE html>\n");
@@ -7,12 +8,14 @@ resp.write("    <meta charset=\"UTF-8\">\n");
 resp.write("    <title>测试模版</title>\n");
 resp.write("</head>\n");
 resp.write("<body>\n");
+{
         (function(){
         var a=6;
         var b=7;
         resp.write(a+b+"<br/>");
         resp.write(test+"<br/>");
         })();
+}
 resp.write("    ");require("./head")(resp,val);resp.write("\n");
 resp.write("    <p>"+test+"这里是变量调用123"+abc.tf.a+"</p>\n");
 resp.write("    <p>这里是if条件判断");if(test==abc.tf.a){resp.write("123");}resp.write("</p>\n");
@@ -34,12 +37,39 @@ resp.write("            "+k1+"=>"+v1+"<br/>\n");
 resp.write("        ");}resp.write("\n");
 resp.write("    ");}resp.write("\n");
 resp.write("    ");require("./foot")(resp,val);resp.write("\n");
+{
         (function(){
         var a=1;
         var b=2;
         resp.write(a+b+"<br/>");
         resp.write(test+"<br/>");
         })();
+}
+resp.write("    <br/>\n");
+resp.write("    <br/>\n");
+resp.write("    ");if(Common.permit(1,PERMIT)){resp.write(""+PERMIT+"显示，该项目id为1<br/>");}resp.write("\n");
+resp.write("    ");if(Common.permit(2,PERMIT)){resp.write(""+PERMIT+"显示，该项目id为2<br/>");}resp.write("");if(Common.permit(3,PERMIT)){resp.write(""+PERMIT+"显示，该项目id为3<br/>");}resp.write("\n");
+resp.write("    ");if(Common.permit(4,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为4<br/>\n");
+resp.write("    ");}resp.write("\n");
+resp.write("    ");if(Common.permit(5,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为5<br/>\n");
+resp.write("    ");}resp.write("\n");
+resp.write("    ");if(Common.permit(6,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为6<br/>\n");
+resp.write("    ");}resp.write("\n");
+resp.write("    ");if(Common.permit(7,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为7<br/>\n");
+resp.write("    ");}resp.write("\n");
+resp.write("    ");if(Common.permit(8,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为8<br/>\n");
+resp.write("    ");}resp.write("\n");
+resp.write("    ");if(Common.permit(9,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为9<br/>\n");
+resp.write("    ");}resp.write("\n");
+resp.write("    ");if(Common.permit(10,PERMIT)){resp.write("\n");
+resp.write("        "+PERMIT+"显示，该项目id为10<br/>\n");
+resp.write("    ");}resp.write("\n");
 resp.write("</body>\n");
 resp.write("</html>\n");
 }

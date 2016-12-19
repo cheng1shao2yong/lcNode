@@ -17,6 +17,8 @@ http.createServer(function(req,resp){
     data.put('test',12345);
     data.put('abc.tf.a',50);
     data.put('list',{a:1,b:2,c:3,d:4,e:5,f:6,g:7});
+    //设置用户组为测试组，那么<permit>标签只显示config.json中对应测试组的id
+    data.put('PERMIT','测试组');
     //调用模版
     T.display('index.html',function(M){
         resp.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
@@ -43,6 +45,8 @@ app.get('/index', function (req, resp) {
     data.put('test',12345);
     data.put('abc.tf.a',50);
     data.put('list',{a:1,b:2,c:3,d:4,e:5,f:6,g:7});
+    //设置用户组为测试组，那么<permit>标签只显示config.json中对应测试组的id
+    data.put('PERMIT','测试组');
     //调用模版
     T.display('index.html',function(M){
         M(resp,data);
@@ -73,6 +77,8 @@ app.use(function *(){
     data.put('test',12345);
     data.put('abc.tf.a',50);
     data.put('list',{a:1,b:2,c:3,d:4,e:5,f:6,g:7});
+    //设置用户组为测试组，那么<permit>标签只显示config.json中对应测试组的id
+    data.put('PERMIT','测试组');
     //调用模版
     T.display('index.html',function(M){
         M(resp,data);
