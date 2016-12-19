@@ -1,7 +1,7 @@
 const Common=require("D:/nodejs/node_modules/laocheng/Common");
 function temp(resp,val){
 with(val){
-resp.write("<p>"+test+"这里foot"+abc.tf.a+"</p>\n");
+resp.write("<p>这里是foot</p>\n");
 }
 }
 module.exports=temp;

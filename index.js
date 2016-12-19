@@ -14,7 +14,7 @@ http.createServer(function(req,resp){
     //为模版设置参数
     let data=T.getValObj();
     data.put('test',12345);
-    data.put('abc.tf.a',50);
+    data.put('abc.tf.a','成绍勇大坏蛋');
     data.put('list',{a:1,b:2,c:3,d:4,e:5,f:6,g:7});
     //设置用户组为测试组，那么<permit>标签只显示config.json中对应测试组的id
     data.put('PERMIT','测试组');

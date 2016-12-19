@@ -14,8 +14,7 @@
         })();
     </node>
     <include file="head.html"/>
-    <p>${test}这里是变量调用123${abc.tf.a}</p>
-    <p>这里是if条件判断<if test="${test==abc.tf.a}">123</if></p>
+    <p>${test}这里可以直接使用字符串的任意方法：${abc.tf.a.slice(0,3)}</p>
     <form action="http://localhost:3000/do" method="post">
         <input type="text" name="userName" value="成绍勇"/><br/><br/>
         <input type="password" name="password" value="1234567"/><br/><br/>

@@ -66,10 +66,15 @@ T.init(__dirname);
  });
 ```
 #### 8、标签
-参数打印
+直接将参数打印
 ```javascript
 ${test}
 ${abc.tf.a}
+```
+也可对参数进行操作后打印
+```javascript
+${test*10}
+${abc.tf.a.slice(0,5)}
 ```
 引入文件标签
 ```html
