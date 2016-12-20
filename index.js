@@ -1,5 +1,14 @@
 "use strict";
+var events=require('events');
+var eventEmitter=new events.EventEmitter();
+//事件驱动配置
+eventEmitter.on('cheng',function(){
+    console.log('cheng连接成功');
+});
+//事件触发
+eventEmitter.emit('cheng');
 /******************************这里是node.js的标准写法***************************************/
+/*
 const http=require('http');
 const T=require('laocheng');
 //初始化模板引擎
@@ -26,8 +35,7 @@ http.createServer(function(req,resp){
     });
 }).listen(3000);
 console.log('已经启动服务器！');
-
-
+*/
 /********************************这里是express中的写法*************************************/
 
 /*
