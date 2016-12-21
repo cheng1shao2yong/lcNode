@@ -34,7 +34,7 @@
       <file leaf-file-name="laocheng.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/laocheng/laocheng.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-360">
               <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
               <folding />
             </state>
@@ -348,12 +348,12 @@
       <workItem from="1482113208480" duration="12217000" />
       <workItem from="1482195689356" duration="5976000" />
       <workItem from="1482286530078" duration="261000" />
-      <workItem from="1482287854559" duration="1554000" />
+      <workItem from="1482287854559" duration="1619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164902000" />
+    <option name="totallyTimeSpent" value="164967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -575,7 +575,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/laocheng/laocheng.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-360">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
