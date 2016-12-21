@@ -19,7 +19,7 @@ http.createServer(function(req,resp){
     //设置用户组为测试组，那么<permit>标签只显示config.json中对应测试组的id
     data.put('PERMIT','测试组');
     //调用模版
-    T.display('home/index.html',function(M){
+    T.display('index.html',function(M){
         resp.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
         M(resp,data);
         resp.end();
