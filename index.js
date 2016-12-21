@@ -1,14 +1,5 @@
 "use strict";
-var events=require('events');
-var eventEmitter=new events.EventEmitter();
-//事件驱动配置
-eventEmitter.on('cheng',function(){
-    console.log('cheng连接成功');
-});
-//事件触发
-eventEmitter.emit('cheng');
 /******************************这里是node.js的标准写法***************************************/
-/*
 const http=require('http');
 const T=require('laocheng');
 //初始化模板引擎
@@ -28,14 +19,14 @@ http.createServer(function(req,resp){
     //设置用户组为测试组，那么<permit>标签只显示config.json中对应测试组的id
     data.put('PERMIT','测试组');
     //调用模版
-    T.display('index.html',function(M){
+    T.display('home/index.html',function(M){
         resp.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
         M(resp,data);
         resp.end();
     });
 }).listen(3000);
 console.log('已经启动服务器！');
-*/
+
 /********************************这里是express中的写法*************************************/
 
 /*
